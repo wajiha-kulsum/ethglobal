@@ -113,6 +113,52 @@ export default function Home() {
         </p>
       ))}
 
+      {/* Infrastructure band */}
+      <p className="absolute left-[96px] top-[1575px] w-[876px] whitespace-pre-wrap font-serif text-[60px] font-normal leading-[60px] text-black">
+        Built like infrastructure. Query it, extend it, and trust what it returns.
+      </p>
+
+      {/* Ruler + column grid */}
+      <div className={`absolute left-[55px] top-[2078px] h-px w-[1618px] ${LINE}`} />
+      {DIVIDER_X.map((x) => (
+        <div key={x} className={`absolute top-[1814px] h-[265px] w-px ${LINE}`} style={{ left: x - 1 }} />
+      ))}
+      {TICKS.map((x) => (
+        <div key={x} className={`absolute top-[2039px] h-[40px] w-px ${LINE}`} style={{ left: x - 1 }} />
+      ))}
+      {COLUMNS.map((x) => (
+        <p
+          key={`h-${x}`}
+          className="absolute whitespace-pre text-[20px] leading-[24px] text-[#1E1E1E]"
+          style={{ left: x, top: 1816 }}
+        >
+          Read your own writes
+        </p>
+      ))}
+      {COLUMNS.map((x) => (
+        <p
+          key={`b-${x}`}
+          className="absolute w-[199px] whitespace-pre-wrap text-[20px] leading-[24px] text-black"
+          style={{ left: x, top: 1850 }}
+        >
+          The first CRM with external consistency.
+        </p>
+      ))}
+
+      {/* Panorama + blue registration blocks */}
+      <div
+        className="absolute left-[55px] top-[2151px] h-[539px] w-[1617px] bg-cover"
+        style={{
+          backgroundImage: "url(/images/panorama.png)",
+          filter: "contrast(98%) saturate(0%)",
+        }}
+      />
+      <div className="absolute left-[1199px] top-[2081px] h-[137px] w-[407px] bg-[#1743FF] opacity-30" />
+      <div className="absolute left-[137px] top-[2610px] h-[137px] w-[407px] bg-[#1743FF] opacity-30" />
+      <div className="absolute left-[55px] top-[2690px] h-[113px] w-[540px] border-2 border-[#A1A1A1]" />
+      <div className="absolute left-[593px] top-[2690px] h-[113px] w-[540px] border-2 border-[#A1A1A1]" />
+      <div className="absolute left-[1131px] top-[2690px] h-[113px] w-[543px] border-2 border-[#A1A1A1]" />
+
     </main>
   );
 }
