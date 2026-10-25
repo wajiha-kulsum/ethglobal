@@ -75,6 +75,44 @@ export default function Home() {
         {"Conversation that\nbuild momentum"}
       </h2>
 
+      {/* Cards: surfaces, labels, drawings, body copy (z-order as designed) */}
+      {CARDS.map((c) => (
+        <div
+          key={c.card}
+          className="absolute top-[965px] h-[547px] w-[336px] border border-[#CECECE] bg-[#EBEBEB]"
+          style={{ left: c.card }}
+        />
+      ))}
+      {CARDS.map((c) => (
+        <p
+          key={c.title}
+          className="absolute whitespace-pre text-[20px] leading-[24px] text-[#1E1E1E]"
+          style={{ left: c.label, top: 987 }}
+        >
+          {c.title}
+        </p>
+      ))}
+      {CARDS.map((c, i) => (
+        <img
+          key={c.title}
+          src={SPHERE_ART[i].src}
+          alt=""
+          width={SPHERE_ART[i].w}
+          height={SPHERE_ART[i].h}
+          className="absolute"
+          style={{ left: c.sphere, top: c.sphereTop }}
+        />
+      ))}
+      {CARDS.map((c) => (
+        <p
+          key={`body-${c.title}`}
+          className="absolute w-[244px] whitespace-pre-wrap text-[20px] leading-[24px] text-black"
+          style={{ left: c.body, top: 1375 }}
+        >
+          Natural conversations that understand context and move customers forward.
+        </p>
+      ))}
+
     </main>
   );
 }
