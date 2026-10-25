@@ -62,6 +62,19 @@ export default function Home() {
         <span className="text-[20px] leading-[24px] text-white">Book a demo</span>
       </div>
 
+      {/* Section surface */}
+      <div className="absolute left-[575px] top-[726px] h-[821px] w-[1080px] bg-white" />
+
+      {/* What we do */}
+      <p className="absolute left-[610px] top-[717px] whitespace-pre text-[20px] leading-[100px] text-black">
+        [ what we do ]
+      </p>
+      <div className={`absolute left-[1632px] top-[946px] h-[1044px] w-px ${LINE}`} />
+      <div className={`absolute left-[990px] top-[726px] h-[477px] w-px ${LINE}`} />
+      <h2 className="absolute left-[610px] top-[808px] whitespace-pre font-serif text-[60px] font-normal leading-[60px] text-[#1E1E1E]">
+        {"Conversation that\nbuild momentum"}
+      </h2>
+
     </main>
   );
 }
