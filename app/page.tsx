@@ -159,6 +159,41 @@ export default function Home() {
       <div className="absolute left-[593px] top-[2690px] h-[113px] w-[540px] border-2 border-[#A1A1A1]" />
       <div className="absolute left-[1131px] top-[2690px] h-[113px] w-[543px] border-2 border-[#A1A1A1]" />
 
+      {/* How it works */}
+      <h2 className="absolute left-[103px] top-[2846px] whitespace-pre font-serif text-[60px] font-normal leading-[72px] text-black">
+        How it works
+      </h2>
+      <p className="absolute left-[103px] top-[2952px] w-[1449px] whitespace-pre-wrap text-[25px] font-medium leading-[30px] text-[#757575]">
+        {LOREM}
+      </p>
+
+      {/* Nav */}
+      <nav className="absolute left-[1116px] top-[37px] flex h-[24px] items-center gap-[39px] text-[20px] leading-[24px] text-[#1E1E1E]">
+        {NAV_LINKS.map((link) => (
+          <span key={link}>{link}</span>
+        ))}
+      </nav>
+      <div className={`absolute left-[1049px] top-[92px] h-px w-[623px] ${LINE}`} />
+      <div className={`absolute left-[1048px] top-[92px] h-[92px] w-px ${LINE}`} />
+
+      {/* Footer */}
+      <div className="absolute left-[413px] top-[3427px] h-[658px] w-[1315px] bg-cover bg-center" style={{ backgroundImage: "url(/images/goddess.png)" }} />
+      <div className="absolute left-[138px] top-[3384px] flex w-[119px] flex-col gap-[5px] text-[20px] text-[#1E1E1E]">
+        <p className="leading-[36px]">Socials</p>
+        <p className="leading-[30px]">Twitter X</p>
+        <p className="leading-[30px]">Instagram</p>
+        <p className="leading-[30px]">Linkedin</p>
+      </div>
+      <div className="absolute left-[341px] top-[3384px] flex w-[139px] flex-col gap-[6px] text-[20px] text-[#1E1E1E]">
+        <p className="leading-[36px]">About Us</p>
+        <p className="leading-[30px]">contact us</p>
+        <p className="leading-[30px]">Services</p>
+      </div>
+      <div className="absolute left-[138px] top-[3576px] flex gap-[50px] text-[20px] leading-[24px] text-[#757575]">
+        <span>Privacy Policy</span>
+        <span>Cookie Policy</span>
+        <span>Terms of Use</span>
+      </div>
     </main>
   );
 }
