@@ -37,9 +37,10 @@ export default function Home() {
     <main className="relative mx-auto h-[4081px] w-[1728px] min-w-[1728px] overflow-hidden bg-white">
       {/* Hero art */}
       <div
-        className="absolute left-0 -top-[12px] h-[1191px] w-[1858px] bg-cover bg-center"
+        className="absolute left-0 top-0 h-[1184px] w-[1728px]"
         style={{
-          backgroundImage: "url(/images/colosseum.png)",
+          backgroundImage: "url(/images/colosseum.svg)",
+          backgroundSize: "100% 100%",
           filter: "brightness(112%) contrast(92%)",
         }}
       />
